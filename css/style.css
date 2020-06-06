@@ -1,0 +1,366 @@
+/* main things
+
+main-color #134877
+
+ main things */
+
+body {}
+
+.container,
+.row {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.underline {
+    width: 70%;
+    border-bottom: 2px solid #134877;
+    margin: 2rem auto 1rem;
+}
+
+.under-heading {
+    width: 4rem;
+    height: .2rem;
+    margin: 0 auto 2rem;
+    background-color: #134877;
+}
+
+
+/*  start upper-bar section */
+
+.top-bar {
+    width: 100%;
+    background-color: #134877;
+    color: white;
+    padding: .5rem;
+}
+
+.top-bar .social a {
+    color: white;
+    padding: .5rem;
+}
+
+@media (max-width:342px) {
+    .top-bar .social a {
+        padding: .2rem
+    }
+    .top-bar {
+        padding: .5rem .2rem;
+    }
+}
+
+@media (max-width:304px) {
+    .top-bar {
+        display: none;
+    }
+}
+
+
+/* -- end upper-bar section */
+
+
+/* start main-content section */
+
+
+/* navbar */
+
+body>div.main-content>nav>div>a>span:nth-child(1) {
+    color: #134877;
+    font-weight: 600
+}
+
+#main-nav {
+    text-transform: uppercase;
+    font-weight: 460
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #134877
+}
+
+#main-nav>ul>li>a:hover {
+    border-top: 2px solid #134877;
+}
+
+.main-content>nav>div>a {
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-toggler {
+    border-color: #134877;
+}
+
+
+/* navbar */
+
+.main-content .background-img {
+    background-image: url("../images/3D-Moving-Wallpapers-HD-03-1920x1080.jpg");
+    width: 100%;
+    height: 550px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 0;
+}
+
+.main-content .background-img .know {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    color: white;
+}
+
+.main-content .background-img h1 {
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: bold;
+    padding: .6rem;
+    line-height: 4rem;
+    margin-bottom: 2rem
+}
+
+@media(max-width:400px) {
+    .main-content .background-img h1 {
+        font-size: 1.8rem
+    }
+}
+
+.main-content .background-img a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: .6rem;
+    background-color: #134877;
+    padding: .6rem 1rem;
+}
+
+.main-content .background-img a:hover {
+    color: #134877;
+    background-color: white;
+    outline: 1px solid #134877;
+}
+
+
+/* start main-content section */
+
+.section-heading {
+    padding: 2rem 1.5rem 0;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: #134877;
+}
+
+
+/* start services section */
+
+.services h1 {}
+
+.services .card,
+.services .card .card-btn,
+.more-services {
+    border: 1px solid #134877;
+    border-radius: 0
+}
+
+.services .card-place {
+    margin: 1rem 0;
+}
+
+.services .card-place h5 {
+    color: #134877;
+}
+
+.services .card .card-btn,
+.more-services {
+    color: white;
+    background-color: #134877;
+}
+
+.services .card .card-btn:hover {
+    color: #134877;
+    background-color: white;
+}
+
+.services.text-center>div.row>button {
+    margin: 1rem auto .7rem;
+}
+
+
+/* end services section */
+
+
+/* start customer-opinions section */
+
+.col-7 {
+    width: 95%;
+}
+
+.customer-opinions .customer-opinions-img {
+    border-radius: 50%;
+    width: 90%;
+}
+
+.customer-opinions .inner-row {
+    padding: .5rem .5rem 1rem;
+}
+
+.inner-row i,
+cite {
+    color: #134877;
+}
+
+
+/* end customer-opinions section */
+
+
+/* start our team */
+
+.our-team .our-team-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: .3rem;
+}
+
+.our-team .img-container {
+    position: relative;
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.our-team .img-container .img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .7s ease;
+    background-color: #134877;
+}
+
+.our-team .img-container:hover .img-overlay {
+    opacity: .93;
+}
+
+.img-text {
+    color: white;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/* end our team img section */
+
+
+/* start contact section */
+
+.contact h5 {
+    padding: 1rem 0;
+    color: #134877
+}
+
+.contact p,
+small {
+    margin-left: .5rem;
+    margin-bottom: .3rem !important;
+}
+
+.contact .contact-form .form-group {
+    padding: .5rem 0;
+}
+
+div.contact>div>div.row>div>form>button {
+    background-color: #134877;
+    color: white;
+    width: 30%;
+    border-radius: 0;
+    margin-bottom: 1rem;
+}
+
+div.contact>div>div.row>div>form>button:hover {
+    /* submit button */
+    background-color: white;
+    color: #134877;
+    border: 1px solid #134877;
+}
+
+div.contact .social a {
+    padding: .4rem;
+    color: #134877
+}
+
+div.contact>div>div.row>div:nth-child(3)>div.underline {
+    width: 70%;
+    border-bottom: 2px solid #134877;
+    margin: .5rem 0 1.5rem;
+}
+
+.contact>div>div.row>div:nth-child(3)>div.last-col>span:nth-child(1) {
+    font-size: 1.3rem;
+    color: #134877;
+    font-weight: 600;
+}
+
+.contact>div>div.row>div:nth-child(3)>div.last-col>span:nth-child(2) {
+    font-size: 1.3rem;
+}
+
+.contact>div>div.row>div:nth-child(3)>div.last-col {
+    margin: 1rem 0 2.1rem 0;
+}
+
+
+/* end contact section */
+
+.footer-section {
+    padding: 2rem;
+    background-color: #134877;
+    color: white;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: white
+}
+
+.footer-section h5,
+h6 {
+    line-height: 1.4rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.footer-section span {
+    text-transform: uppercase;
+}
+
+@media (max-width:422px) {
+    .footer-section h5 {
+        margin: .1rem;
+        font-size: 1rem
+    }
+}
